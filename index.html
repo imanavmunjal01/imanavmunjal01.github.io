@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manav Card</title>
   <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     .container {
       display: flex;
       flex-direction: column;
@@ -29,6 +33,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap:15px;
     }
 
     .link {
@@ -41,14 +46,22 @@
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      font-family: cursive;
+      font-family: "Playfair Display", serif;
     }
     .margin-10px{
       margin-top: 10px;
     }
+    .para{
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+    }
   </style>
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -56,14 +69,18 @@
     <div class="card">
       <img src="manav.jpg" alt="manav" width="300px" class="img-border">
       <div class="content">
-        <p>Manav Munjal BE ME</p>
-        <p>Batch Year: 2023 - 2027</p>
-        <p>Mechanical Engg.</p>
-        <p>Chitkara University</p>
-        <a href="https://www.linkedin.com" class="link">
-          <p>Manav Munjal linkedin <i class="fab fa-linkedin"></i></p>
+        <p class="para">Manav Munjal BE ME</p>
+        <p class="para">Batch Year: 2023 - 2027</p>
+        <p class="para">Mechanical Engg.</p>
+        <p class="para">Chitkara University</p>
+        <!-- linkedin -->
+        <a href="https://www.linkedin.com/in/manav-munjal-1129972b6/" class="link">
+          <p>Manav Munjal LinkedIn <i class="fab fa-linkedin"></i></p>
         </a>
-        <a href="https://www.facebook.com" class="link margin-10px"><p>Facebook <i class="fab fa-facebook-square"></i></p></a>
+        <!-- facebook -->
+        <a href="https://www.facebook.com/manav.munjal.16/" class="link"><p> Manav Munjal Facebook <i class="fab fa-facebook-square"></i></p></a>
+        <!-- instagram -->
+        <a href="https://www.instagram.com/manav7710/" class="link"><p>Manav Munjal Instagram <i class="fab fa-instagram"></i></p></a>
       </div>
     </div>
   </div>
